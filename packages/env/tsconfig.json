@@ -1,0 +1,6 @@
+{
+  "extends": "@pixi-town/config/tsconfig.base.json",
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}

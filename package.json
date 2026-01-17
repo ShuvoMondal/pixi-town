@@ -1,0 +1,48 @@
+{
+  "name": "pixi-town",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "catalog": {
+      "dotenv": "^17.2.2",
+      "zod": "^4.1.13",
+      "typescript": "^5",
+      "@types/bun": "^1.3.4",
+      "better-auth": "^1.4.9"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @pixi-town/db db:push",
+    "db:studio": "turbo -F @pixi-town/db db:studio",
+    "db:generate": "turbo -F @pixi-town/db db:generate",
+    "db:migrate": "turbo -F @pixi-town/db db:migrate",
+    "db:start": "turbo -F @pixi-town/db db:start",
+    "db:watch": "turbo -F @pixi-town/db db:watch",
+    "db:stop": "turbo -F @pixi-town/db db:stop",
+    "db:down": "turbo -F @pixi-town/db db:down"
+  },
+  "dependencies": {
+    "@pixi-town/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.11",
+    "@pixi-town/config": "workspace:*",
+    "@types/bun": "catalog:",
+    "turbo": "^2.6.3",
+    "typescript": "catalog:",
+    "ultracite": "7.0.11"
+  },
+  "packageManager": "bun@1.3.4"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@pixi-town/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@pixi-town/db": "workspace:*",
+    "@pixi-town/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@pixi-town/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
