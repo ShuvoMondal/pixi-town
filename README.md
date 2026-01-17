@@ -1,6 +1,6 @@
 # pixi-town
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines React, TanStack Router, Express, and more.
+A gather town clone
 
 ## Features
 
@@ -66,4 +66,4 @@ pixi-town/
 - `bun run dev:server`: Start only the server
 - `bun run check-types`: Check TypeScript types across all apps
 - `bun run db:push`: Push schema changes to database
-- `bun run db:studio`: Open database studio UI
+- # `bun run db:studio`: Open database studio UI
