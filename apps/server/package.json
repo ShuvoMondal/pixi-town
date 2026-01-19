@@ -24,7 +24,7 @@
     "@pixi-town/config": "workspace:*",
     "@types/bun": "catalog:",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
+    "@types/express": "^5.0.6",
     "tsdown": "^0.16.5",
     "typescript": "catalog:"
   }
