@@ -1,21 +1,19 @@
 {
-  "name": "@pixi-town/env",
+  "name": "@pixi-town/schemaValidator",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "exports": {
-    "./server": "./src/server.ts",
-    "./web": "./src/web.ts"
+    ".": "./index.ts"
   },
   "dependencies": {
-    "@t3-oss/env-core": "^0.13.1",
     "dotenv": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@pixi-town/config": "workspace:*",
     "@types/bun": "catalog:",
-    "@types/node": "^25.0.9",
     "typescript": "catalog:"
-  }
+  },
+  "module": "index.ts"
 }
